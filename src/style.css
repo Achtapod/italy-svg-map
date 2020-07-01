@@ -1,0 +1,14 @@
+.svg-map {
+  width: auto;
+  height: 100vh;
+  stroke: #666;
+  stroke-width: 1;}
+  .svg-map__location {
+    fill: #866daf;
+    cursor: pointer; }
+  .svg-map__location:focus, .svg-map__location:hover {
+    fill: #a791ca;
+    outline: 0; }
+  .svg-map__location[aria-checked=true] {
+    fill: #29c0a1 }
+
