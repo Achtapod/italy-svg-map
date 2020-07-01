@@ -1519,6 +1519,16 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
+"@svg-maps/italy@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@svg-maps/italy/-/italy-1.0.1.tgz#48886543f11b41e883bc8809dbcbd208a3fe3523"
+  integrity sha512-tCPZ6hi8H2HlzIghaoA6fXB+RxexCZI2CniQnS0EcBG3NGrWJdpzWoDwSsq6ELm+AkNtSA5El6NjZC73RTXQsA==
+
+"@svg-maps/taiwan@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@svg-maps/taiwan/-/taiwan-1.1.0.tgz#c2cc487ff5d8883082715c53bcf0d3b882422992"
+  integrity sha512-mt/A2zm+z7Br6hw/koYwRPgdR1GhLKp2mw5cRekvQ8QY31X8bhdIuxqlEtF1cWhPDLi2le8wKl0AQwXjebjDhw==
+
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-4.2.0.tgz#dadcb6218503532d6884b210e7f3c502caaa44b1"
@@ -9688,6 +9698,13 @@ react-scripts@3.4.1:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.1.2"
+
+react-svg-map@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-svg-map/-/react-svg-map-2.1.2.tgz#e5f0b3b2fddb9deb226b64288b5aaca9af5d727a"
+  integrity sha512-nLp4Ih52LhpEGDAMDf0I1d2/0WQMTbcegbk02AhIarFkKRNQs4L4wCX3xT1sXGIK7XFVMRv8xM5XoWMxGGSr0g==
+  dependencies:
+    prop-types "^15.7.2"
 
 react@^16.13.1:
   version "16.13.1"

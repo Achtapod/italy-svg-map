@@ -1,9 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import React from "react";
+import Taiwan from "@svg-maps/taiwan";
+import { SVGMap } from "react-svg-map";
 
-function App() {
+export default function App() {
+  // Create new map object
+  const customTaiwan = {
+    ...Taiwan,
+    label: "Custom map label",
+    locations: Taiwan.locations.map(location => {
+      // Modify each location
+    })
+  };
+
   return (
-    <div>Selam!</div>
+    <SVGMap map={customTaiwan} />
   )
 }
-
-export default App
