@@ -1,14 +1,22 @@
+
+.centered {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .svg-map {
   width: auto;
   height: 100vh;
-  stroke: #666;
-  stroke-width: 1;}
+  stroke: #4e211c;
+  stroke-width: 1.5;}
   .svg-map__location {
-    fill: #866daf;
-    cursor: pointer; }
+    cursor: pointer;
+    shape-rendering: crispEdges;
+    fill: transparent;}
   .svg-map__location:focus, .svg-map__location:hover {
-    fill: #a791ca;
+    fill: #ffc005;
     outline: 0; }
   .svg-map__location[aria-checked=true] {
-    fill: #29c0a1 }
-
+    fill: #188052 }
