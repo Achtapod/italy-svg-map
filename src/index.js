@@ -17,11 +17,16 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(Italy);
     return(
       <div className='container centered'>
         <ReactTooltip />
         <svg className="svg-map" viewBox={Italy.viewBox}>
+          <defs>
+            <linearGradient id="MyGradient">
+              <stop offset="5%" stop-color="#F60" />
+              <stop offset="95%" stop-color="#FF6" />
+            </linearGradient>
+          </defs>
           {
             Italy.locations.map(region => (
               <path 
@@ -38,10 +43,7 @@ class App extends React.Component {
         </svg>
       </div>
     )
-    // return <button onClick={this.handleClick}>Click Me</button>;
   }
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
-
-// https://batuhancaksin.wixsite.com/website21/shop?Region=Abruzzen&lang=en
