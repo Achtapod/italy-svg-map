@@ -23,7 +23,7 @@ class App extends React.Component {
   }
 
   handleClick = value => () => {
-    window.top.location.href = `https://batuhancaksin.wixsite.com/website21/wine?Region=${value.names}`
+    window.top.location.href = `https://glora-store.de/wine?Region=${value.names}`
   }
 
   render() {
