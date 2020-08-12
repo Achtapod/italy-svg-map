@@ -12,7 +12,6 @@ class App extends React.Component {
   }
 
   handleClick = value => () => {
-    value = value.charAt(0).toUpperCase() + value.slice(1);
     window.top.location.href = `https://batuhancaksin.wixsite.com/website21/wine?Region=${value}`
   }
 
@@ -28,17 +27,19 @@ class App extends React.Component {
             </linearGradient>
           </defs>
           {
-            Italy.locations.map(region => (
-              <path 
+            Italy.locations.map(region => {
+              region.id = region.id.charAt(0).toUpperCase() + region.id.slice(1);
+              return(
+                <path 
                 className='svg-map__location'
                 key={region.id} 
                 id={region.id} 
                 d={region.path}
                 onClick={this.handleClick(region.id)}
                 data-tip={region.id}
-              >
-              </path>
-            ))
+                ></path>
+              )
+            })
           }
         </svg>
       </div>
