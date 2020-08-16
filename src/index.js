@@ -12,7 +12,7 @@ class App extends React.Component {
     super(props);
   }
 
-  handleRegionName = (region) => () => {
+  handleRegionFiltering = (region) => () => {
     const query = region.id
     regionsJSON.map(item => {
       const {de, en} = item;
