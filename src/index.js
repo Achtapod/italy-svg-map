@@ -23,7 +23,7 @@ class App extends React.Component {
   }
 
   handleClick = value => () => {
-    window.top.location.href = `https://glora-store.de/`
+    window.top.location.href = `https://glora-store.de?Region=${value.names}`
   }
 
   render() {
@@ -42,7 +42,7 @@ class App extends React.Component {
                 d={region.path}
                 data-tip={region.id}
                 onClick={this.handleClick(region)}
-                onMouseEnter={this.handleRegionName(region)}
+                onMouseEnter={this.handleRegionFiltering(region)}
                 ></path>
               )
             })
